@@ -1,0 +1,60 @@
+body {
+    font-family: cursive;
+    background-color: #F6EBDA;
+}
+
+#nav-Superior {
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-Pesquisar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-Pesquisar input {
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+}
+.nav-Links li{
+    display:inline-block
+}
+
+#section1 {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+}
+
+#section1 img {
+    width: 526px;
+}
+
+#section2 {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section2 table tr td {
+    border: 1px solid black;
+    padding: 30px;
+}
+#section2 table tr td img{
+    width: 308px;
+    height: 226px;
+}
+#section2 table tr td div img{
+    width: 32px;
+    height: 32px;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-evenly;
+}
