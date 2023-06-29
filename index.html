@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Cafeteria</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/section1.css">
+    <link rel="stylesheet" href="CSS/section2.css">
+
 </head>
 <body>
     <header>
         <nav id="nav-Superior">
-            <img src="media/header/logo_coffe.png">
-            <ul class="nav-Links">
-                <li><a href="">About Us</a></li>
+            <img src="media/logo-Coffee.png">
+            <ul>
+                <li><a href="" class="textAboutUs">About us</a></li>
                 <li><a href="">Our Product</a></li>
                 <li><a href="">Delivery</a></li>
             </ul>
-            <div class="nav-Pesquisar">
-                <img src="media/header/akar-icons_search.png">
-                <input type="text">
-                <img src="media/header/icons_cart.png">
+            <div>
+                <input type="text" placeholder="Cappuccino">
+                <img class="imgLupa" src="media/icon_search.png">
+                <img id="iconCart" src="media/icon-Carrinho.png" onmouseover="mouseDown()" onmouseleave="mouseUp()">
             </div>
         </nav>
     </header>
@@ -26,96 +35,86 @@
         <div>
             <h2>Enjoy your coffee before your activity</h2>
             <p>Boost your productivity and build your mood with a glass of coffee in the morning </p>
-            <button>Order now</button>
-            <a href="">More menu</a>
+            <div style="display: flex;">
+                <button>
+                    Order now
+                    <img src="media/icon-add_Carrinho.png">
+                </button>
+                <a href="">More menu</a>
+            </div>
         </div>
-        <img src="media/img-hero.png">
+        <img src="media/img-Coffee.png">
     </section>
 
     <section id="section2">
         <h2>Special menu for you</h2>
-        <table>
+
+        <table id="products">
             <tr>
-                <td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
+                <td class="product">
+                    <img class="imgProduct" src="media/products/Sandwich.png">
+                    <table class="details">
+                        <tr>
+                            <td class="productName">Sandwich</td>
+                            <td class="productValue">12 K</td>
+                        </tr>
+                        <tr>
+                            <td class="productDescription">Bread with meat and vegetables</td>
+                            <td class="productAddToCartAlign"><img class="productAddToCart" src="media/icon-add_Carrinho.png"></td>
+                        </tr>
+                    </table>
                 </td>
-                <td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
-                </td><td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
+                <td class="product">
+                    <img class="imgProduct" src="media/products/Hot Milk.png">
+                    <table class="details">
+                        <tr>
+                            <td class="productName">Hot Milk</td>
+                            <td class="productValue">12 K</td>
+                        </tr>
+                        <tr>
+                            <td class="productDescription">Hot Milk with less sugar</td>
+                            <td class="productAddToCartAlign"><img class="productAddToCart" src="media/icon-add_Carrinho.png"></td>
+                        </tr>
+                    </table>
                 </td>
+                <td class="product">
+                    <img class="imgProduct" src="media/products/Coffee Ice Cream.png">
+                    <table class="details">
+                        <tr>
+                            <td class="productName">Coffee Ice Cream</td>
+                            <td class="productValue">12 K</td>
+                        </tr>
+                        <tr>
+                            <td class="productDescription">Coffee with ice cream vanilla</td>
+                            <td class="productAddToCartAlign"><img class="productAddToCart" src="media/icon-add_Carrinho.png"></td>
+                        </tr>
+                    </table>
+                </td>
+                
             </tr>
             <tr>
-                <td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
-                </td><td>
-                    <img src="media/section2/Sandwich.png">
-                    <div class="detalhes">
-                        <div>
-                            <p>Sandwich</p>
-                            bread with meat and vegetables
-                        </div>
-                        <div>
-                            <p>12 K</p>
-                            <img src="media/section2/Add-Carrinho.png">
-                        </div>
-                    </div>
+                <td class="product">
+                    <img class="imgProduct" src="media/products/Cappucino.png">
+                    <table class="details">
+                        <tr>
+                            <td class="productName">Cappucino</td>
+                            <td class="productValue">12 K</td>
+                        </tr>
+                        <tr>
+                            <td class="productDescription">Hot Cappucino</td>
+                            <td class="productAddToCartAlign"><img class="productAddToCart" src="media/icon-add_Carrinho.png"></td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
+
     </section>
+    
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+header {
+    margin: 35px;
+}
+header nav {
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+header nav img{
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    gap: 32px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+header nav ul .textAboutUs {
+    color: #FF902B;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+header nav ul li a:active {
+    font-weight: bold;
+}
+.imgLupa {
+    position: absolute;
+    margin-left: 10px;
+}
+
+/*Button Search*/
+header nav div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+header nav div input {
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+    padding: 0 20px 0px 52px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 12px;
+    outline: none;
+}
+
+#iconCart {
+    width: 32px;
+    height: 32px;
+}

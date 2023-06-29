@@ -1,0 +1,58 @@
+#section2 {
+    border: solid black 1px;
+    margin: 35px;
+}
+#section2 h2{
+    margin: 20px 35px;
+}
+
+#products {
+    width: 80%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 40px 40px;
+}
+.product {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+    width: 33%;
+}
+
+.details {
+    margin: auto;
+    /*border: solid black 2px;*/
+    width: 80%;
+}
+
+.productAddToCartAlign {
+    text-align: center;
+}
+
+
+.imgProduct {
+    border-radius: 50px;
+    padding: 30px 24px 12px 24px;
+}
+
+.productAddToCart {
+    cursor: pointer;
+    width: 43px;
+    text-align: right;
+}
+
+.productValue {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.productName {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productDescription {
+    font-size: 14px;
+    color: #7E7D7A;
+    font-weight: 700;
+}
